@@ -2,11 +2,13 @@ import Input from "./Input.jsx"
 import { useRef } from "react"
 
 export default function NewProject(){
-    const enteredTitle = title.current.value;
-    const enteredDescription = description.current.value;
-    const  enteredDueDate = dueDate.current.value 
-
     
+    function handleSave() {
+        const enteredTitle = title.current.value;
+        const enteredDescription = description.current.value;
+        const  enteredDueDate = dueDate.current.value 
+
+    }
     return <div className="w-[35rem] mt-16">
         <menu className="flex items-center justify-end gap-4 my-4">
             <li><button className="text-stone-800 hover:text-stone-950">Cancel</button></li>
