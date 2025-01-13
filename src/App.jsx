@@ -10,15 +10,6 @@ function App() {
     projects: []
   })
 
-  function handleStartAddProject() {
-    setProjectsState(prevState => {
-      return {
-        ...prevState,
-        selectedProjectId: null,
-      }
-    })
-  }
-
   function handleStartAddProject(){
     setProjectsState(prevState => {
       return {
@@ -28,6 +19,20 @@ function App() {
       }
     })
   }
+
+  function handleAddProject(project){
+    setProjectsState(prevState =>  {
+      const newProject = {
+        ...projectData,
+        id: Math.random()
+      }
+
+      return {
+        ...prevState,
+        projects: [...prevState.projects, newProject]
+      }
+    })
+  } 
 
   let content;
 
