@@ -1,8 +1,11 @@
+import { forwardRef, useImperativeHandle } from "react"
 import { createPortal } from "react-dom"
 
-
-export default function Modal({children}) {
+const Modal = forwardRef(function Modal({children}, ref) {
     return createPortal(<dialog>
         {children}
-    </dialog>, document.getElementById('modal-root'))
-}
+    </dialog>, document.getElementById('modal-ro'))
+})
+
+
+export default Modal
