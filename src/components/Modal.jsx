@@ -19,7 +19,7 @@ const Modal = forwardRef(function Modal({children, buttonCaption}, ref) {
         <form method="dialog">
             <button>{buttonCaption}</button>
         </form>
-    </dialog>, document.getElementById('modal-ro'))
+    </dialog>, document.getElementById('modal-root'))
 })
 
 
