@@ -15,7 +15,7 @@ function SelectedProject({project}) {
             <p className="mb-4 text-stone-400">{formattedDate}</p>
             <p className="text-stone-600 whitespace-pre-wrap">{project.description}</p>
         </header>
-        TASK
+
     </div>
   )
 }
